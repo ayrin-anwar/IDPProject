@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="@string/app_name"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+
+    <ListView
+        android:id="@+id/simpleListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="false"></ListView>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="400dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white_transparent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/edit_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/edit_bt" />
+
+        <Button
+            android:id="@+id/notify_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/notify_bt" />
+
+        <Button
+            android:id="@+id/logout_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="@string/logout_bt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:background="@color/colorAccent"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"></ImageButton>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_person_black_24dp"></ImageButton>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_settings_black_24dp"></ImageButton>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
